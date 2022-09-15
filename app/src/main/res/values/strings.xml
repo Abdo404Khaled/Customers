@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Customers</string>
+    <string name="add_customer">Add customer</string>
+    <string name="refresh_customer">Refresh customer</string>
+    <string name="add_new_customer">Add new customer</string>
+    <string name="Customer_Name">Customer Name</string>
+    <string name="Customer_Code">Customer Code</string>
+    <string name="Customer_Mobile">Customer Mobile</string>
+    <string name="Customer_Address">Customer Address</string>
+    <string name="Update_location_Coordinates">Update Coordinates</string>
+    <string name="Location_Coordinates">Location Coordinates</string>
+    <string name="Location_latitude">Latitude:</string>
+    <string name="Location_longitude">Longitude:</string>
+    <string name="show_location">Show Location</string>
+    <string name="Confirm">Confirm</string>
+</resources>
