@@ -81,4 +81,14 @@ public class DatabaseHelper extends SQLiteOpenHelper implements iDatabaseHelper 
         db.close();
         return customersList;
     }
+
+    @Override
+    public boolean deleteCustomer(Customer customer) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        boolean success = db.delete("CUSTOMERS", "NAME=?", new String[]{customer.getName()}) == -1 ? false : true;
+        db.close();
+        if(success)
+            return true;
+        return false;
+    }
 }

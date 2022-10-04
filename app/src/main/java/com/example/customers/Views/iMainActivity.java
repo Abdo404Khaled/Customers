@@ -22,6 +22,7 @@ public interface iMainActivity {
 
         void showOnMaps(String uriString);
 
+        void deleteCustomer(Customer customer);
     }
 
     interface view{
@@ -38,14 +39,7 @@ public interface iMainActivity {
 
         void showCustomDialogAddUser();
 
-        void showCustomDialogCustomerDetails(
-                String name,
-                int code,
-                int mobile,
-                String address,
-                double latitude,
-                double longitude
-        );
+        void showCustomDialogCustomerDetails(Customer customer);
 
         void onShowingMaps(Uri uri);
     }

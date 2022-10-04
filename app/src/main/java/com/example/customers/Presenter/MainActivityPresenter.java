@@ -73,14 +73,7 @@ public class MainActivityPresenter implements iMainActivity.Presenter {
 
     @Override
     public void showCustomerData(Customer customer) {
-        view.showCustomDialogCustomerDetails(
-                customer.getName(),
-                customer.getCode(),
-                customer.getMobile(),
-                customer.getAddress(),
-                customer.getLocation().getLatitude(),
-                customer.getLocation().getLongitude()
-        );
+        view.showCustomDialogCustomerDetails(customer);
     }
 
     @Override
@@ -89,6 +82,15 @@ public class MainActivityPresenter implements iMainActivity.Presenter {
         view.onShowingMaps(uri);
     }
 
+    @Override
+    public void deleteCustomer(Customer customer) {
+        boolean success = db.deleteCustomer(customer);
+        if(success)
+            view.onSuccess("Customer deleted");
+        else
+            view.onError("Error has been occured");
+        refreshList();
+    }
     public void setView(iMainActivity.view view) {
         this.view = view;
     }

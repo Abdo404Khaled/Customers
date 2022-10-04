@@ -10,4 +10,6 @@ interface iDatabaseHelper {
 
     public List<Customer> getAllCustomers();
 
+    public boolean deleteCustomer(Customer customer);
+
 }

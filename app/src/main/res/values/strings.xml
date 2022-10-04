@@ -11,6 +11,8 @@
     <string name="Location_Coordinates">Location Coordinates</string>
     <string name="Location_latitude">Latitude:</string>
     <string name="Location_longitude">Longitude:</string>
-    <string name="show_location">Show Location</string>
+    <string name="show_location">Location</string>
     <string name="Confirm">Confirm</string>
+    <string name="editCustomer">Edit</string>
+    <string name="deleteCustomer">Delete</string>
 </resources>
